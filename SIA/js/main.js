@@ -16,7 +16,7 @@ setInterval(() => {
 
 // Avisos dinámicos
 const avisos = [
-    "Aviso 1: La biblioteca cerrará a las 5 PM.",
+    "Aviso 1: Solicita tu bueca en la plataforma SUBES",
     "Aviso 2: Nueva inscripción de cursos comienza mañana.",
     "Aviso 3: Mantenimiento del sistema este fin de semana.",
     "Aviso 4: Entrega de calificaciones disponible hoy."
