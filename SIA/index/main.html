@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Noticias</title>
+    <link rel="stylesheet" href="/SIA/css/main.css">
+</head>
+<body>
+
+<header>
+    <h1>inicio</h1>
+    <button onclick="window.location.href='login.html'">Iniciar Sesión</button>
+</header>
+
+<!-- Sección Carrusel -->
+<section>
+    <h2>Fotos Destacadas</h2>
+    <div class="carousel">
+        <img src="https://picsum.photos/900/300?random=1" class="active" alt="Foto 1">
+        <img src="https://picsum.photos/900/300?random=2" alt="Foto 2">
+        <img src="https://picsum.photos/900/300?random=3" alt="Foto 3">
+    </div>
+</section>
+
+<!-- Sección Noticias -->
+<section>
+    <h2>Últimas Noticias</h2>
+    <div class="news-item">Noticia 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    <div class="news-item">Noticia 2: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+    <div class="news-item">Noticia 3: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</div>
+</section>
+
+<!-- Sección Avisos -->
+<section>
+    <h2>Avisos Importantes</h2>
+    <div class="aviso-item" id="avisos">
+        <!-- Avisos se actualizarán con JS -->
+    </div>
+</section>
+
+<script src="/SIA/js/main.js"></script>
+</body>
+</html>
