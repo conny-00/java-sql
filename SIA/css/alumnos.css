@@ -1,0 +1,82 @@
+/* =============================
+   Estilos generales
+============================= */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: rgba(65, 143, 199, 0.878);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Icono hamburguesa */
+.menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* solo se muestra en móvil */
+}
+
+/* Menú principal */
+.menuAlumno ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+.menuAlumno a:hover {
+    background-color: #35b621c2;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+
+.menuAlumno a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* mostrar icono en móvil */
+    }
+
+    .menuAlumno {
+        
+    display: flex;       /* horizontal por defecto */
+    gap: 20px;           /* espacio entre opciones */
+    margin: 0;
+    padding: 0;
+}
+
+    
+
+    .menuAlumno.show {
+        display: flex; /* mostrar al hacer click */
+    }
+
+    .menuAlumno ul {
+        flex-direction: column;
+    }
+
+    .menuAlumno li {
+        border-bottom: 1px solid #4dcd60bd;
+    }
+
+    .menuAlumno li:last-child {
+        border-bottom: none;
+    }
+}

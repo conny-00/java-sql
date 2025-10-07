@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es"> 
+  <head>
+    <meta charset="UTF-8" /> <!-- Configura la codificación de caracteres en UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Ajusta el diseño a dispositivos móviles -->
+    <title>Login</title> <!-- Título que aparece en la pestaña del navegador -->
+    
+    <!-- Vincula el archivo CSS externo con los estilos -->
+    <link rel="stylesheet" href="style.css" />
+    
+    <!-- Importa íconos desde la librería Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Contenedor principal de todo el formulario -->
+    <div class="container">
+      
+      <!-- Sección del formulario de Login -->
+      <div class="form-box login">
+        <!-- Formulario de inicio de sesión; envía datos a Iniciarsesion.php mediante POST -->
+        <form action="Iniciarsesion.php" method="POST">
+          <h1>Iniciar Sesión</h1>
+          
+          <!-- Campo de nombre de usuario -->
+          <div class="input-box">
+            <input type="text" name="username" placeholder="Nombre de Usuario" required />
+            <i class="bx bxs-user"></i> <!-- Ícono de usuario -->
+          </div>
+          
+          <!-- Campo de contraseña -->
+          <div class="input-box">
+            <input type="password" name="password" placeholder="Contraseña" required />
+            <i class="bx bxs-lock-alt"></i> <!-- Ícono de candado -->
+          </div>
+
+          <!-- Enlace de recuperación de contraseña -->
+          <div class="forgot-link">
+            <a href="#">¿Olvidaste tu contraseña?</a>
+          </div>
+
+          <!-- Botón para enviar el formulario de login -->
+          <button type="submit" class="btn">INICIAR SESIÓN</button>
+        </form>
+      </div>
+
+      <!-- Sección del formulario de Registro -->
+      <div class="form-box register">
+        <!-- Formulario de registro; envía datos a registro.php mediante POST -->
+        <form action="registro.php" method="POST">
+          <h1>Regístrate</h1>
+          
+          <!-- Campo de nombre de usuario -->
+          <div class="input-box">
+            <input type="text" name="username" placeholder="Nombre de Usuario" required />
+            <i class="bx bxs-user"></i> <!-- Ícono de usuario -->
+          </div>
+
+          <!-- Campo de correo electrónico -->
+          <div class="input-box">
+            <input type="email" name="email" placeholder="Correo" required />
+            <i class="bx bxs-envelope"></i> <!-- Ícono de correo -->
+          </div>
+
+          <!-- Campo de contraseña -->
+          <div class="input-box">
+            <input type="password" name="password" placeholder="Contraseña" required />
+            <i class="bx bxs-lock-alt"></i> <!-- Ícono de candado -->
+          </div>
+
+          <!-- Botón para enviar el formulario de registro -->
+          <button type="submit" class="btn">Registrar</button>
+        </form>
+      </div>
+
+      <!-- Panel lateral de alternancia (toggle) -->
+      <div class="toggle-box">
+        
+        <!-- Panel que invita a registrarse -->
+        <div class="toggle-panel toggle-left">
+          <h1>¡Hola, Bienvenido!</h1>
+          <p>¿No tienes una cuenta?</p>
+          <button class="btn register-btn">Regístrate</button> <!-- Cambia la vista a registro -->
+        </div>
+
+        <!-- Panel que invita a iniciar sesión -->
+        <div class="toggle-panel toggle-right">
+          <h1>¡Bienvenido <br> de nuevo!</h1>
+          <p>¿Ya tienes una cuenta?</p>
+          <button class="btn login-btn">Iniciar Sesión</button> <!-- Cambia la vista a login -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Vincula el archivo de JavaScript que controla el toggle entre login y registro -->
+    <script src="./script.js"></script>
+  </body>
+</html>
